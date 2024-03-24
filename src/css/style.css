@@ -11,13 +11,16 @@
 .border-out {
   border: #000 solid 20px;
   border-radius: 30px;
-  padding: 20px; 
+  padding: 20px;
+  background-color: #9d9d9d;
+ 
 }
 
 .border-in {
-  border: #fff solid 10px;
-  border-radius: 30px;
+  border: #000000 solid 5px;
   padding: 20px; 
+  background-color: #faebd7;
+
 }
 
 .container {
@@ -33,7 +36,6 @@
   border: #000 solid 10px;
   border-radius: 20px;
   padding: 10px; 
-  background-color: #faebd7;
 }
 
 
@@ -42,6 +44,8 @@
   flex-wrap: wrap;
   background-color: #969696;
   margin: 10px;
+  border: #000000 solid 2px;
+
 }
 
 .grid {
@@ -90,7 +94,7 @@ button {
 }
 
 .bottom button {
-  margin: 0 5px; /* Adds spacing between your left, down, and right buttons */
+  margin: 0 10px; 
 }
 
 button {
@@ -113,11 +117,10 @@ button {
   margin: 10px 0;
 }
 
-/* Enhancements for visual appeal */
 button {
-  background-color: #080c4c; /* Green */
+  background-color: #080c4c; 
   border: none;
-  color: rgb(200, 196, 196);
+  color: #fbfbfb;
   text-align: center;
   text-decoration: none;
   display: inline-block;
