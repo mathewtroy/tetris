@@ -8,19 +8,45 @@
   padding: 20px;
 }
 
+.border-out {
+  border: #000 solid 20px;
+  border-radius: 30px;
+  padding: 20px; 
+}
+
+.border-in {
+  border: #fff solid 10px;
+  border-radius: 30px;
+  padding: 20px; 
+}
+
 .container {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
-.grid {
-  width: 200px;
-  height: 400px;
+.frame {
+  display: flex; 
+  justify-content: center; 
+  align-items: start; 
+  border: #000 solid 10px;
+  border-radius: 20px;
+  padding: 10px; 
+  background-color: #faebd7;
+}
+
+
+.grid, .mini-grid {
   display: flex;
   flex-wrap: wrap;
   background-color: #969696;
   margin: 10px;
+}
+
+.grid {
+  width: 200px;
+  height: 400px;
 }
 
 .grid div {
@@ -35,11 +61,6 @@
 .mini-grid {
   width: 80px;
   height: 80px;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #969696;
-  margin: 10px;
-
 }
 
 .mini-grid div {
@@ -47,12 +68,16 @@
   width: 20px;
 }
 
+button {
+  border-radius: 5px;
+}
 
 .buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
+
 }
 
 .buttons #change-btn {
@@ -61,6 +86,7 @@
 
 .bottom {
   display: flex;
+  justify-content: center;
 }
 
 .bottom button {
@@ -70,18 +96,28 @@
 button {
   padding: 10px 20px;
   cursor: pointer;
+  font-weight: bold;
+
 }
 
-.score, .start {
+.score {
+  font-weight: bold;
+  color:#063f38;
+  font-size: xx-large;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.start {
   text-align: center;
   margin: 10px 0;
 }
 
 /* Enhancements for visual appeal */
 button {
-  background-color: #1a641c; /* Green */
+  background-color: #080c4c; /* Green */
   border: none;
-  color: white;
+  color: rgb(200, 196, 196);
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -89,5 +125,5 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #0a5c11;
 }
