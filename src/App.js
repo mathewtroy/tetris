@@ -1,6 +1,8 @@
 // src/App.js
 import React, { Component } from 'react';
 import './css/style.css';
+import './css/media.css';
+
 import Tetris from './components/Tetris';
 
 class App extends Component {

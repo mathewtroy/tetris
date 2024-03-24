@@ -1,0 +1,62 @@
+@media only screen and (max-width: 990px) {
+    html {
+        font-size: 90%;
+    }
+
+    .container, .frame {
+        flex-direction: column; /* Stack grid and mini-grid vertically */
+        align-items: center;
+    }
+
+    .grid, .mini-grid {
+        margin: 5px 0; /* Reduce margin for smaller screens */
+    }
+
+    .buttons, .bottom {
+        width: 100%;
+        justify-content: space-around; /* Spread buttons out evenly */
+    }
+
+    .bottom button {
+        margin: 0 5px; /* Reduce margin between buttons */
+    }
+}
+  
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 80%;
+    }
+
+    .border-out, .border-in {
+        padding: 10px; /* Reduce padding */
+    }
+
+    .buttons, .bottom {
+        flex-direction: row;
+        flex-wrap: wrap; /* Allow buttons to wrap */
+        justify-content: center;
+    }
+
+    .buttons #change-btn, .bottom button {
+        flex: 1 1 auto; /* Allow buttons to grow and shrink */
+        margin: 5px; /* Ensure spacing around buttons */
+    }
+}
+  
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 70%;
+    }
+
+    .border-out, .border-in {
+        border-radius: 20px; /* Adjust border-radius for smaller screens */
+    }
+
+    .buttons, .bottom {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    .bottom button {
+        width: 100%; /* Full width buttons for easier tapping */
+    }
+}

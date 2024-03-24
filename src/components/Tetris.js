@@ -33,6 +33,7 @@ class Tetris extends Component {
             </div>
             <div className="buttons">
             <button id="change-btn">Change</button>
+{/* TODO add SVG Components  */}
                   <div class="bottom">
                     <button id="left-btn">Left</button>
                     <button id="down-btn">Down</button>
